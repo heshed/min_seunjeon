@@ -12,6 +12,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         AnalysisKorean ak = new AnalysisKorean();
+        Synonyms syns = new Synonyms();
 
         File f = new File("text_selected");
         File[] file_list = f.listFiles();
@@ -28,8 +29,13 @@ public class Main {
             BufferedWriter bw = new BufferedWriter(fw);
 
             for (String line: all_lines) {
+                String result = "";
                 List noun_list = ak.getNouns(line);
-                String result = Joiner.on(" ").join(noun_list) + "\n";
+                for (Object noun : noun_list) {
+                    String synWord = syns.get(noun.toString());
+                    result += " " + synWord;
+                }
+                result += "\n";
                 bw.write(result);
             }
             bw.close();
