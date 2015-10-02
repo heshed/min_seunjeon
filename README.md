@@ -8,6 +8,7 @@
 
 ## 다운로드
 
+- [min_seunjeon-2.0.zip](https://github.com/heshed/min_seunjeon/archive/v2.0.zip)
 - [min_seunjeon-1.0.zip](https://github.com/heshed/min_seunjeon/archive/v1.0.zip)
 
 
