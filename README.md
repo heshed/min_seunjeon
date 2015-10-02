@@ -6,6 +6,11 @@
 - 형태소 분석기 은전한닢을 적용하여 텍스트 파일 생성
 - maven 기반, intellij에서 실행
 
+## 다운로드
+
+- [min_seunjeon-1.0.zip](https://github.com/heshed/min_seunjeon/archive/v1.0.zip)
+
+
 ## 디렉토리 구성
 
 ```
