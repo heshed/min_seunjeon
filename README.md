@@ -8,6 +8,7 @@
 
 ## 다운로드
 
+- [min_seunjeon-2016-03-19.zip](https://github.com/heshed/min_seunjeon/archive/2016-03-19.zip)
 - [min_seunjeon-3.0.zip](https://github.com/heshed/min_seunjeon/archive/v3.0.zip)
 - [min_seunjeon-2.0.zip](https://github.com/heshed/min_seunjeon/archive/v2.0.zip)
 - [min_seunjeon-1.0.zip](https://github.com/heshed/min_seunjeon/archive/v1.0.zip)
@@ -19,8 +20,25 @@
 .
 ├── src                   <== 소스 디렉토리
 ├── text_selected         <== 원 데이터 소스
-└── text_selected_noun    <== 명사 추출 텍스트 파일(utf-8)
+├── text_selected_noun    <== 명사 추출 텍스트 파일(utf-8)
+├── work-4                <== 2016-03-18 euckr 원본 데이터
+├── work-4-utf8           <== 2016-03-18 utf-8 가공 데이터
+└── work-4-utf8-noun      <== 2016-03-18 최종 데이터
 ```
+
+## 작업 히스토리
+
+### 2016-03-18
+
+ - euckr 데이터를 utf-8 변환 및 데이터 한곳으로 이동
+ 
+```
+  - work-4 원본 디렉토리 생성 및 데이터 복사
+  - work-4-utf8 디렉토리 생성
+  - ./convert-charset.sh 실행
+```
+
+ - Main 함수 리펙토링
 
 ## 품사 태그 설명
 
